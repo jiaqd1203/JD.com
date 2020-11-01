@@ -1,0 +1,583 @@
+.container{
+    background-color: #f4f4f4;
+}
+
+.nav-wrap{
+  width: 100%; 
+  background-color:#e3e4e5;
+  /* 把高度写死，防止hover的时候那几个框框把高度撑大 */
+  height: 30px;
+  line-height: 30px;
+  border-bottom:1px #ddd solid;
+}
+
+.nav{
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;        
+}
+
+/* 设置字体样式 */
+.nav a,
+.nav span,
+.nav i{
+color: #999;
+text-decoration: none;
+}
+
+.left-nav{
+    float: left;       
+}
+
+.left-nav .location{
+    /* text-align: center; 当鼠标hoverleft-nav离开后海外两个字会移动位置到city-list中间 */
+    /* 用padding调整让文字居中 */
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.left-nav:hover .location{    
+    /* width: 60px; 
+    height: 30px;*/
+    background-color: #fff;
+    border: 1px rgb(204, 204, 204) solid;
+    border-bottom: none;
+    color: #f10125;
+    padding-bottom: 1px;
+}
+
+/* 或者.location .fas */
+.left-nav i{
+    color: #f10125;  
+}
+
+.left-nav:hover a{
+    color: #f10125;
+}
+
+.left-nav .city-list{
+    display: none;
+    width: 320px;
+    height: 436px;
+    border: 1px rgb(204, 204, 204) solid;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    /* 设置绝对定位，使其不占据页面的位置,防止把导航栏撑高 */
+    position: absolute;
+    z-index: 999;
+    top:31px;
+}
+
+/* hover不能绑定给a，当鼠标移入到location时，我们要让city-list显示 */
+.left-nav:hover  .city-list{
+    display: block;
+    padding-left: 10px;
+}
+
+.city-list .city li{
+    padding: 2px 0;
+    float: left;
+    width: 60px;
+    line-height: 24px;    
+    height: 24px;
+}
+
+.city-list .city li:hover a{
+    background-color:#f4f4f4;
+    color: #e33333;
+    padding: 0 8px;
+    float: left;
+}
+
+.city-list .city li a{
+    color: #999;
+    padding: 0 8px;
+}
+
+.city-list .aLine{
+    width: 262px;
+    height: 0;
+    border-bottom: 1px dotted #eee;
+    margin: 10px auto 10px 10px;
+    float: left;
+}
+
+.city-list .district-list{
+    float: left;
+}
+
+.city-list .district-list p{
+    display: block;
+    margin-left: 10px;
+    color: #8f8f8f;
+    float: left;
+}
+
+.city-list .district-list .district{
+    float: left;
+}
+
+.city-list .district-list .district li{
+    float: left;
+    width: 150px;
+    line-height: 24px;
+    margin-left: 10px;   
+}
+
+.city-list .district-list .district li a{
+    color: #8f8f8f;
+} 
+
+.city-list .district-list .district li:hover a{
+    color: #f10125;    
+}
+
+.right-nav{
+float: right;
+}
+
+.right-nav li{
+    /* float: left; 跟inline-block一般只用一个布局？*/
+    display: inline-block; 
+    line-height: 30px;
+    /* padding: 0 7px; */
+    
+}
+
+.right-nav .login{
+    margin-right: 5px;
+}
+
+.right-nav li i{
+    margin-left:5px ;
+    /* 没办法把图标设置更小？*/
+    font-size: 12px;
+}
+
+/* 需要改红色的给设置成一个class */
+.right-nav .highlight{
+ color: #f10125;
+}
+
+.right-nav .myjd-list{
+    width: 280px;
+    height: 200px;
+    border: 1px rgb(204, 204, 204) solid;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2) ;
+    position: absolute;
+    top: 30px;
+    /* padding:0 8px; */
+    display: none;
+}
+
+.right-nav .myjd{
+    height: 30px;
+    font-weight: 10px;
+    /* 鼠标每次移入我的京东都会有变化，因为我们加了边框，padding等
+    那么我们把下面hover改变的边框挪到这里就可以了 */
+    /* 挪上来发现hover之前原本的内容被加了边框，我们给他设置成透明
+    border: 1px rgb(204, 204, 204) solid; */
+    border: 1px solid transparent;
+    border-bottom: none;
+    /* 想让他字与框有点缝隙 */
+    padding: 0 2px;
+}
+/* 祖先元素盖不住后代元素，所以他俩不能父子关系 */
+.dropdown:hover .myjd{
+    background-color: #fff;
+    border: 1px rgb(204, 204, 204) solid;
+    border-bottom: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.dropdown:hover .myjd-list{
+    display: block;
+    z-index: 999;
+}
+
+.dropdown .myjd-list .myinfo{
+    float: left;
+    /* margin-top: 10px; */
+    padding: 10px 0;
+    background-color: #fff;
+}
+.dropdown .myjd-list .myinfo2{
+    border-top:  1px solid #f1f1f1;
+}
+/* .dropdown .myjd-list .aLine{ 
+    width: 100%;
+    height: 0;
+    border-bottom: 1px dotted #eee; 
+    float: left;
+}*/
+
+.dropdown .myjd-list .myinfo li{
+     width: 120px;
+     float: left;
+     margin-left: 15px;
+}
+
+.right-nav .purchase{
+    border: 1px transparent solid;
+    border-bottom: none;
+    /* padding: 0 2px; */
+}
+
+.right-nav .purchase-dropdown:hover .purchase-list{
+    display: block;
+    z-index: 999;
+    position: absolute;
+    background-color: #fff;
+}
+
+
+
+.right-nav .purchase-list li{
+    width: 70px;
+    line-height: 24px;
+    
+}
+
+.right-nav .purchase-dropdown:hover .purchase{
+    background-color: #fff;
+    border: 1px rgb(204, 204, 204) solid;
+    border-bottom: none;
+    z-index: 9999;
+    position: relative;
+   
+}
+
+.right-nav .purchase-list{
+    position: absolute;
+    top: 30px;
+    border: 1px rgb(204, 204, 204) solid;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2) ;
+    width: 140px;
+    display: none;
+    padding: 10px 0 10px 15px;
+    z-index: 999;
+}
+
+.right-nav li a:hover{
+    color: #f10125;
+}
+
+/* span设置宽高无效，把span改成li */
+.right-nav .line{
+    height: 10px;
+    width: 1px;
+    background-color: rgb(204, 202, 202);
+    /* 如果用span可以这样设置，border-left: #999 solid 1px; */
+    /* 当margin:10px 0时会把其他的li顶处nav？*/
+    margin: 12px 12px 0;
+    /* margin: 0px 10px; */
+}
+
+.header-wrap{
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header{
+    margin: 0 auto;
+    width: 1190px;
+    height: 140px;
+    position: relative;
+}
+
+.logo-image{
+    display: block;
+    /* 用100%不好使 */
+    height: 120px;
+    width: 190px;
+    float: left;
+    position: absolute;
+    top: 10px;
+}
+
+.search{
+    top: 25px;
+    left: 260px;
+    width: 490px;
+    height: 36px;
+    position: absolute;
+    background-color: #e1251b;
+    border: 2px solid #e2231a;
+    /* padding: 1px; */
+}
+
+.search form{
+    width: 430px;
+}
+
+.search input{
+    width: 430px;
+    height: 32px;
+    border: 1px solid transparent;
+    /* 让搜索框上下红条一致 */
+    margin: 1px;
+    outline: none;
+}
+
+/* 设置搜索框里的小照相机的方法 */
+.search .upload-bg{
+    width: 20px;
+	height: 20px;
+	display: block;
+	background: url(/img/sprite-photo-search.png) no-repeat;
+	position: absolute;
+    top: 10px;
+    left: 400px;
+    /* right: 75px; */
+    /*把鼠标的停留方式弄成一只食指伸出的手*/
+    cursor: pointer;
+}
+/* 不起作用 */
+.search .upload-bg:hover{
+    background-color: url(/img/sprite-photo-search1.png) no-repeat;
+}
+
+.search button{
+    width: 56px;
+    height: 36px;
+    position: absolute;
+    left: 434px;
+    top: 0px;
+    background-color: #e1251b;
+    border: none;
+    color: white;
+    font-size: 16px;
+    /* 点button的时候有一圈黑线默认的样式框 */
+    outline: none;
+}
+
+.search button:hover{
+    background-color: #c81623;
+}
+
+.header .shopping-cart{
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    background-color: white;
+    border:1px #eee solid;
+    position: absolute;
+    top: 25px;
+    /* left: 800px; */
+    right: 280px;
+    text-align: center;
+    padding: 1px;
+}
+
+.header .shopping-cart:hover{
+    border: 1px solid #c81623;
+}
+
+.header .shopping-cart i{
+    color: #e1251b;
+    font-size: 16px;
+    
+}
+
+.header .shopping-cart .shopping-count{
+    width: 16px;
+	height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 32px;
+    display: inline-block;
+    font-size: 12px;    
+    line-height: 12px;
+    color: #fff;
+    background-color: #f10215;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.header .shopping-cart a{
+    text-decoration: none;
+    color: #e1251b;
+    padding-left: 10px;
+}
+
+.header .hotwords{
+    position: absolute;
+    top: 70px;
+    left: 260px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.header .hotwords a{
+    text-decoration: none;
+    /* 或者items设置padding-right？ */
+    margin-right: 10px;
+    color: #999;
+}
+
+.header .hotwords a:hover{
+    color: #c81623;
+}
+
+.header .nav-items{
+    position: absolute;
+    top: 110px;
+    left: 200px;
+}
+
+.header .nav-items .redA{
+    font-size: 15px;
+    text-decoration: none;
+    color: #e1251b;
+    font-weight: bold;
+}
+
+.header .nav-items a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header .nav-items a:hover{
+    color: #c81623;
+}
+
+.mainmenu{
+    width: 190px;
+    height: 480px;
+    float: left;
+}
+
+.mainmenu-list{
+    height: 450px;
+    background-color: #fefefe;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+/* 选中第一个li的a */
+.mainmenu-list li:first-child a{
+    color: #c81623;
+}
+
+.mainmenu-list li{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+}
+
+.mainmenu-list li:hover{
+    background-color:#d9d9d9;
+}
+
+.mainmenu-list span{
+    color: #636363;
+}
+
+.mainmenu-list a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.mainmenu-list a:hover{
+    color: #c81623;
+}
+
+.slider-wrap{
+    height: 100%;    
+    float: left;
+}
+
+.slider{    
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 590px;
+    height: 470px;   
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;    
+}
+
+.slider #imgList{
+    position: absolute;
+    left: 0;
+}
+
+.slider button{
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .15);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline-style: none;
+}
+
+.slider button:hover{
+    background-color: rgba(0,0,0,.4);
+}
+
+.slider .btn-prev{
+    position: absolute;
+    left: 0;
+    top: 218px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;    
+}
+
+.slider .btn-next{
+    position: absolute;
+    left: 565px;
+    top: 218px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.slider li{
+    float: left;
+    width: 590px;
+    height: 470px;
+}
+/* 给这个div开定位而不是给a，只定位一次就好，更方便 */
+.slider #pointer{
+    position: absolute;   
+    left: 30px;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.slider #pointer a{
+    /* 此处没必要用float加display：block,
+    内联元素脱离文档流自动变块元素 */
+    /* display: inline-block; */
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px; 
+    border: 2px solid rgba(0, 0, 0, .05);  
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+}
+
+.slider #pointer a:hover{
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(0, 0, 0, .4);
+    background-color: #fff;    
+}
+
+.ad-box{
+    width: 190px;
+    height: 470px;
+    background-color: #222;
+    display: block;
+    float: left;
+}
