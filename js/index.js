@@ -91,7 +91,53 @@ window.onload = function(){
             allA[index].style.backgroundColor = "#fff";
             allA[index].style.border = "2px solid rgba(0, 0, 0, .4)";
     }
+    var boxwrap = document.getElementById("ad-boxwrap");
+    var adbox = document.getElementsByClassName('ad-box');
+    var adPrev = document.getElementsByClassName('btn-ad-prev')[0];
+    adPrev.onclick = function(){
+        index--;
+        if(index<0){
+            index = adbox.length-1;
+        }
+        for(var i=0;i<adbox.length-1;i++){
+            adbox[i].style.display = "none"; 
+         }
+         adbox[index].style.display = "block";
+    }
+    var adNext = document.getElementsByClassName('btn-ad-next')[0];
+    adNext.onclick = function(){
+        index++;
+        if(index>adbox.length-1){
+            index = 0;
+        }
+        for(var i=0;i<adbox.length-1;i++){
+            adbox[i].style.display = "none"; 
+         }
+         adbox[index].style.display = "block";
+    }
 
+    boxwrap.onmouseover=function(){            
+        clearInterval(adtime);
+    }
+    boxwrap.onmouseout=function(){
+        clearInterval(adtime);
+        run();
+    }
+
+    var adtime = null;
+    function run(){
+        adtime = setInterval(function(){
+            index ++;
+            if(index>adbox.length-1){
+                index = 0;
+            }
+            for(var i=0;i<adbox.length-1;i++){
+               adbox[i].style.display = "none"; 
+            }
+            adbox[index].style.display = "block";
+        },3000)
+    }
+    run();
 }
 
 

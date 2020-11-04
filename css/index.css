@@ -581,6 +581,11 @@ float: right;
     display: block;
     float: left;
     margin: 10px 10px 0;
+    overflow: hidden;
+}
+
+.ad-box{
+    display: block;
 }
 
 .ad-box a img{
