@@ -95,25 +95,25 @@ window.onload = function(){
     var adbox = document.getElementsByClassName('ad-box');
     var adPrev = document.getElementsByClassName('btn-ad-prev')[0];
     adPrev.onclick = function(){
-        index--;
-        if(index<0){
-            index = adbox.length-1;
+        adindex--;
+        if(adindex<0){
+            adindex = adbox.length-1;
         }
         for(var i=0;i<adbox.length-1;i++){
             adbox[i].style.display = "none"; 
          }
-         adbox[index].style.display = "block";
+         adbox[adindex].style.display = "block";
     }
     var adNext = document.getElementsByClassName('btn-ad-next')[0];
     adNext.onclick = function(){
-        index++;
-        if(index>adbox.length-1){
-            index = 0;
+        adindex++;
+        if(adindex>adbox.length-1){
+            adindex = 0;
         }
         for(var i=0;i<adbox.length-1;i++){
             adbox[i].style.display = "none"; 
          }
-         adbox[index].style.display = "block";
+         adbox[adindex].style.display = "block";
     }
 
     boxwrap.onmouseover=function(){            
@@ -123,18 +123,18 @@ window.onload = function(){
         clearInterval(adtime);
         run();
     }
-
+    var adindex = 0;
     var adtime = null;
     function run(){
         adtime = setInterval(function(){
-            index ++;
-            if(index>adbox.length-1){
-                index = 0;
+            adindex ++;
+            if(adindex>adbox.length-1){
+                adindex = 0;
             }
             for(var i=0;i<adbox.length-1;i++){
                adbox[i].style.display = "none"; 
             }
-            adbox[index].style.display = "block";
+            adbox[adindex].style.display = "block";
         },3000)
     }
     run();
