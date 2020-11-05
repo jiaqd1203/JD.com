@@ -594,6 +594,11 @@ float: right;
     margin-bottom: 6px;
 }
 
+.ad-box a img:hover{
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
 #ad-boxwrap button{
     width: 25px;
     height: 35px;
@@ -622,4 +627,116 @@ float: right;
     top: 217.5px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
+}
+
+.function-wrap{
+    width: 190px;
+    height: 470px;
+    margin-top: 10px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+
+.function-wrap .user{
+    width: 190px;
+    height: 102px;
+    position: relative;
+}
+
+.function-wrap .user img{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    border-radius: 50%;
+    display: block;
+}
+
+.function-wrap .user .user-show{
+    width: 106px;
+    height: 38px;
+    position: absolute;
+    top: 16px;
+    left: 74px;
+}
+
+.function-wrap .user .user-show a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+.function-wrap .user .user-show a:hover{
+    color: rgb(200, 22, 35);
+}
+
+.function-wrap .user .user-show p a{
+    color: #333;
+    text-decoration: none;
+}
+
+.function-wrap .user-profit{
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 67px;
+} 
+
+.function-wrap .user-profit a{
+    text-decoration: none;
+}
+
+.function-wrap .user-profit-new{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    margin: 0 5px;
+    color: #fff;
+    background-color: #e1251b;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 13px;
+}
+
+.function-wrap .user-profit-new:hover{
+    background-color: #c81623;
+    transition: background .3s ease,color .3s ease;
+}
+
+.function-wrap .user-profit-plus{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    margin: 0 5px;
+    color: #e5d790;
+    background-color: #363634;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 13px;
+}
+
+.function-wrap .user-profit-plus:hover{
+    background-color: #c81623;
+    color: #fff;
+    transition: background .3s ease,color .3s ease;
+}
+
+.function-wrap .user:after{
+    position: absolute;
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    content: "";
+    bottom: 0;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
+
+
+
+.function-wrap .function{
+    width: 190px;
+    height: 238px;
+    background-color: #444;
 }
