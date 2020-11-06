@@ -733,10 +733,125 @@ float: right;
     background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
 }
 
+.function-wrap .news{
+    width: 190px;
+    height: 130px;
+    position: relative;
+}
 
+.function-wrap .news .news-head{
+    margin-bottom: 8px;
+}
+
+.function-wrap .news h3{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin-left: 15px;
+    font-weight: bold;
+    width: 56px;
+    height: 20px;
+    margin-top: 9px;
+}
+
+.function-wrap .news a{
+    color: #999;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.function-wrap .news-content{
+    margin: 0 15px;
+    height: 88px;
+    width: 160px;
+    position: relative;
+    padding: 0 15px;
+    bottom: 7px;
+}
+
+.function-wrap .news-content li{
+    width: 160px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    margin-bottom: 6px;
+    list-style: none;
+    /* 不开这个定位里面的a全部重叠在一起了 */
+    position: relative;    
+}
+
+.function-wrap .news-content li a{
+    width: 160px;
+    height: 16px;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    position: absolute;
+}
+
+.function-wrap .news-content li a span{
+    display: inline-block;
+    margin-right: 6px;
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+}
+
+.function-wrap .news:after{
+    position: absolute;
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    content: "";
+    bottom: 0;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
 
 .function-wrap .function{
     width: 190px;
     height: 238px;
-    background-color: #444;
+    padding-top: 5px;
+}
+
+.function-wrap .function-list{
+    padding: 5px 0;
+}
+
+.function-wrap .function-item{
+    float: left;
+    width: 63px;
+    height: 55px;
+    text-align: center;
+}
+
+.function-wrap .function-item img{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.function-wrap .function-item:hover{
+    
+}
+
+.function-wrap .function-item-img-hover{
+    display: none;
+}
+
+.function-item a span{
+    display: block;
+    color: #333;
+    height: 25px;
+
 }
