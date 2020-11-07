@@ -2,6 +2,50 @@
     background-color: #f4f4f4;
 }
 
+.hang{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.promotional-top-wrap{
+    width: 100%;
+    background-color: #f10125;
+}
+
+.promotional-top{
+    margin: 0 auto;
+    width: 1380px;
+    height: 80px;
+    background-image: url(/img/top-banner.png.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.promotional-top .promotional-top-left{
+    position: absolute;
+    left: 95px;
+}
+
+.promotional-top-list{
+    width: 309px;
+    height: 80px;
+    position: absolute;
+    left: 405px;
+    top: 0;
+    vertical-align: center;
+}
+
+.promotional-top-list img{
+    width: 68px;
+    height: 68px;
+    margin-right: 35px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 6px;
+}
+
 .nav-wrap{
   width: 100%; 
   background-color:#e3e4e5;
@@ -449,6 +493,22 @@ float: right;
     color: #c81623;
 }
 
+.header .promo{
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 1000px;
+    top: 10px;
+}
+
+.content-wrap{
+    display: block;
+    background-image: url("/img/background.png.webp");
+    /* background-size: 1900px 480px ; */
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
 .mainmenu{
     width: 190px;
     height: 480px;
@@ -841,8 +901,19 @@ float: right;
     text-align: center;
 }
 
-.function-wrap .function-item:hover{
-    
+.function-wrap .function-item:hover span{
+    color: #e1251b;
+    transition: color .15s ease;
+}
+
+.function-wrap .function-item:hover .function-item-img{
+    display: none;
+    transition: all .5s;
+}
+
+.function-wrap .function-item:hover .function-item-img-hover{
+    display: inline-block;
+    transition: all .5s;
 }
 
 .function-wrap .function-item-img-hover{
