@@ -143,20 +143,10 @@ window.onload = function(){
     var itemImgH = document.getElementsByClassName('function-item-img-hover');
     var itemImgS = funcItem.getElementsByTagName('span');
     
-    for(var i=0; i<funcItem.length;i++){
-        this.funcItem[num] = i;
-    }
-
-    funcItem.onmouseover=function(){
-        
-        itemImg.style.display = 'none';
-        itemImgH.style.display = 'block';
-        itemImgS.style.color = '#e1251b';
-    }
-
-    funcItem.onmouseout=function(){
+    function countdown(){
 
     }
+    
     
 }
 
