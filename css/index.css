@@ -927,15 +927,12 @@ float: right;
 
 }
 
-.seckill-container{
-    
-
-}
-
 .seckill{
     position: relative;
     height: 260px;
+    width: 1190px;
     margin-top: 30px;
+    background-color: #fff;
 }
 
 .seckill-countdown{
@@ -1015,6 +1012,107 @@ float: right;
     margin-right: 0;
 }
 
+.seckill-list{
+    position: relative;
+}
 
+.seckill-list .seckill-item{
+    float: left;
+    width: 200px;
+    height: 260px;
+    position: relative;
+}
 
+.seckill-list .seckill-item img{
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: 30px auto 0;
+    
+}
 
+.seckill-list .seckill-item-name{
+    font-size: 12px;
+    font-weight: 400;
+    width: 160px;
+    color: #333;
+    transition: color .2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.seckill-list .seckill-item-price{
+    border: 1px solid #e1251b;
+    width: 160px;
+    height: 24px;
+    line-height: 24px;
+    margin: 7px auto 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #e1251b;
+}
+
+.seckill-list .seckill-item-price-sec{
+    width: 92px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    /* 要减去border */
+    line-height: 22px;
+    float: left;
+    position: relative;
+}
+
+.seckill-list .seckill-item-price-sec i{
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: -5px;
+    
+}
+
+.seckill-list .seckill-item-price-sec i:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 22px 8px 0 0;
+    position: absolute;
+    top: 0;
+    left: 84px;
+}
+
+.seckill-list .seckill-item:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 200px;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg,white,#eeeeee,white);
+}
+
+.seckill-list .seckill-item-price-origin{
+    height: 100%;
+    width: 66px;
+    float: right;
+    background-color: #fff;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+    box-sizing: border-box;
+    text-decoration: line-through;
+    vertical-align: top;
+}
+
+.seckill-list .seckill-item-price-origin i{
+    margin-right: -5px;    
+}
