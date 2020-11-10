@@ -1116,3 +1116,71 @@ float: right;
 .seckill-list .seckill-item-price-origin i{
     margin-right: -5px;    
 }
+
+.seckill-slider{
+    width: 200px;
+    height: 260px;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#seckill-slider-list{
+    width: 600px;
+    height: 240px;
+    position: absolute;
+    left: 0;    
+}
+
+.seckill-slider .seckill-slider-item{  
+    width: 180px;
+    height: 240px;
+    color: #666;
+    text-decoration: none;
+    float: left;
+    margin: 0 10px;
+}
+
+.seckill-slider .seckill-slider-item-image img{
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.seckill-slider .seckill-slider-item-info{
+    width: 180px;
+    height: 90px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    background: linear-gradient(180deg,rgba(255,255,255,.5),rgba(220,224,236,.5));
+}
+
+.seckill-slider .seckill-slider-item-info .item-info-promo{
+    font-weight: 700;
+    color: #333;
+}
+
+.seckill-slider .seckill-slider-item-info .item-info-action{
+    width: 82px;
+    height: 24px;
+    color: #e1251b;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #e1251b;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-left: 4px;
+    margin-top: 4px;
+    display: inline-block;
+    transition: background-color .2s ease;
+}
+
+.seckill-slider .seckill-slider-item-info .item-info-action:hover{
+    color: white;
+    border-color: transparent;
+    background-color: #c81623;
+}

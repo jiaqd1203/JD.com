@@ -138,16 +138,21 @@ window.onload = function(){
         },3000)
     }
     run();
-    var funcItem = document.getElementsByClassName('function-item')[0];
-    var itemImg = document.getElementsByClassName('function-item-img');
-    var itemImgH = document.getElementsByClassName('function-item-img-hover');
-    var itemImgS = funcItem.getElementsByTagName('span');
-    
-    function countdown(){
-
+    var secList = document.getElementById('seckill-slider-list');
+    var secItem = secList.getElementsByClassName('seckill-slider-item');
+    var sectime=null;
+    var secindex = 0;
+    function secSlider() {
+        sectime = setInterval(function () {
+            secindex++;
+            if (secindex > secItem.length - 1) {
+                secindex = 0;
+            }
+            secList.style.left = -200 * secindex + "px";
+        }, 2500);
     }
-    
-    
+     secSlider();
+        
 }
 
 
