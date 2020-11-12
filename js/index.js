@@ -143,16 +143,25 @@ window.onload = function(){
     var sectime=null;
     var secindex = 0;
     function secSlider() {
-        sectime = setInterval(function () {
+        sectime = setInterval(function(){
             secindex++;
-            if (secindex > secItem.length - 1) {
+            if(secindex > secItem.length - 1){
                 secindex = 0;
+                secList.style.left = 0;
             }
-            secList.style.left = -200 * secindex + "px";
-        }, 2500);
-    }
-     secSlider();
+            //secList.style.left = -200 * secindex + "px";
+            move(secList,"left",-200*secindex,20,function(){               
+                //以下，结束以后做判断，如果是最后一张了直接换成第一张
+                //使视觉不会感觉停留在第一张图片过长时间
+                if(secindex >= secItem.length - 1){
+                    secindex = 0;
+                    secList.style.left = 0;
+                }
+            });           
+        }, 3000);
         
+        }
+     secSlider();        
 }
 
 
