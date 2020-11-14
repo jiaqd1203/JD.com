@@ -1199,7 +1199,7 @@ float: right;
     margin: 30px auto;
     background-image: url('/img/activity.webp');
     background-size: cover;
-    
+    margin-bottom: 0;
 }
 
 .activity-main{
@@ -1291,7 +1291,47 @@ float: right;
     cursor: pointer;
 }
 
+.mod-service{
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.mod-service-list{
+    width: 1190px;
+    margin: 0 auto;
+    width: 1190px;
+    height: 42px;
+}
+
+.mod-service-list .mod-service-item{
+    float: left;
+    width: 252px;
+    list-style: none;
+    text-align: center;
+    padding-left: 45px;
+}
+
+.mod-service-list .mod-service-item .mod-service-item-title{
+    float: left;
+    width: 36px;
+    height: 42px;
+}
+
+.mod-service-list .mod-service-item .mod-service-item-text{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+    overflow: hidden;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
 .space{
     width: 100%;
-    height: 1000px;
+    height: 300px;
 }
