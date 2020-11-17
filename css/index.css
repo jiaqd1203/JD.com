@@ -1335,3 +1335,68 @@ float: right;
     width: 100%;
     height: 300px;
 }
+.mod-help{
+    padding: 20px 0;
+}
+
+.mod-help-inner{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.mod-help-inner a:hover{
+    color: #c81623;
+}
+
+.mod-help-list{
+    float: left;
+    width: 158px;
+}
+
+.mod-help-title{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.mod-help-content{
+    color: #636363;
+    margin-bottom: 3px;
+}
+
+.mod-help-content li{
+    padding: 2px 0;
+}
+
+.mod-help-content li a{
+    color: #666;
+}
+
+.mod-help-cover{
+    float: left;
+    width: 200px;
+}
+
+.mod-help-cover-title{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.mod-help-cover-content{
+    color: #636363;
+}
+
+.mod-help-cover-content .mod-help-cover-more{
+    text-align: right;
+}
+
+.mod-help-cover-content .mod-help-cover-more a{
+    color: #666;
+}
+
+.mod-help-cover-content .mod-help-cover-more a:hover{
+    color: #c81623;
+}
+
+
