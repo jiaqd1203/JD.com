@@ -161,7 +161,9 @@ window.onload = function(){
         }, 3000);
         
         }
-     secSlider();        
+     secSlider();
+
+     
 }
 
 

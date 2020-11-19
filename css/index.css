@@ -1464,3 +1464,54 @@ float: right;
     height: 30px;
     margin: 0 3px;
 }
+
+#elevator{
+   position: fixed;
+   width: 60px;
+   top: 760px;
+   left: 50%;
+   margin-left: 635px;
+   background-color: #fff; 
+}
+
+.elevator-list{
+   
+}
+
+.elevator-item{
+    position: relative;
+    width: 60px;
+    height: 60px;    
+}
+
+.elevator-item:hover a{
+    background-color: #c81623;
+    color: #fff;
+    z-index: 999;
+}
+
+.elevator-item:hover a:after{
+    display: none;
+}
+
+.elevator-item a{   
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    width: 30px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+}
+
+.elevator-item a:after{
+    /* 加了content才正常显示 */
+    content: '';
+    height: 1px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    display: inline-block;    
+    background: linear-gradient(270deg,white,#eee,#eee,white);
+}
