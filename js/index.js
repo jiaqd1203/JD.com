@@ -162,7 +162,25 @@ window.onload = function(){
         
         }
      secSlider();
-
+     window.onscroll = function(){
+        var elevator = document.getElementById('elevator');        
+        /*elevator的高
+        var sideHeight = elevator.offsetHeight;
+        网页屏幕可视区域的高
+        var screenHeight =document.documentElement.clientHeight||document.body.clientHeight;
+        滚动条距离顶部的高
+        var scrollHeight = document.documentElement.scrollTop||document.body.scrollTop;
+        alert(parseInt(elevator.offsetTop));*/ 
+        //页面元素距离浏览器工作区顶端的距离  =  元素距离文档顶端偏移值  -   网页被卷起来的高度
+        //页面元素距离浏览器工作区顶端的距离 =  DOM元素对象.offsetTop  -  document.documentElement.scrollTop       
+            if(parseInt(document.documentElement.scrollTop)<510){
+                
+                elevator.style.cssText='position:absolute;top:760px;left:50%;margin-left:635px;';                
+            }else{            
+                //elevator.style.cssText = 'position:fixed;right:0px;top:'+(-(sideHeight-screenHeight))+'px';
+                elevator.style.cssText='position:fixed;top:250px;left:50%;margin-left:635px;';
+            }        
+    }    
      
 }
 
