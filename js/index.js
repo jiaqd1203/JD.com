@@ -173,13 +173,32 @@ window.onload = function(){
         alert(parseInt(elevator.offsetTop));*/ 
         //页面元素距离浏览器工作区顶端的距离  =  元素距离文档顶端偏移值  -   网页被卷起来的高度
         //页面元素距离浏览器工作区顶端的距离 =  DOM元素对象.offsetTop  -  document.documentElement.scrollTop       
-            if(parseInt(document.documentElement.scrollTop)<510){
-                
-                elevator.style.cssText='position:absolute;top:760px;left:50%;margin-left:635px;';                
-            }else{            
-                //elevator.style.cssText = 'position:fixed;right:0px;top:'+(-(sideHeight-screenHeight))+'px';
-                elevator.style.cssText='position:fixed;top:250px;left:50%;margin-left:635px;';
-            }        
+         if (parseInt(document.documentElement.scrollTop) < 510) {
+
+             elevator.style.cssText = 'position:absolute;top:760px;left:50%;margin-left:635px;';
+         } else {
+             //elevator.style.cssText = 'position:fixed;right:0px;top:'+(-(sideHeight-screenHeight))+'px';
+             elevator.style.cssText = 'position:fixed;top:250px;left:50%;margin-left:635px;';
+         }
+
+         var top = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+         var item1 = document.getElementById('item1');
+         var item2 = document.getElementById('item2');
+         //记得加[0]
+         var elevatorItem1 = document.getElementById('elevator-item1').getElementsByTagName('a')[0];
+         var elevatorItem2 = document.getElementById('elevator-item2').getElementsByTagName('a')[0];
+         console.log(item1.offsetTop - document.documentElement.scrollTop);
+         if (top > item1.offsetTop - document.documentElement.scrollTop && top < item2.offsetTop - document.documentElement.scrollTop) {
+             elevatorItem1.style.cssText = "color:#c81623;";
+             elevatorItem2.style.cssText = "";
+         } else if (top > item2.offsetTop - document.documentElement.scrollTop) {
+             elevatorItem1.style.cssText = "";
+             elevatorItem2.style.cssText = "color:#c81623;";
+         } else {
+             //用break会Uncaught SyntaxError: Illegal break statement报错
+             return false;
+         }
+
     }    
      
 }

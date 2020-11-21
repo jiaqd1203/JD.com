@@ -1486,7 +1486,7 @@ float: right;
 
 .elevator-item:hover a{
     background-color: #c81623;
-    color: #fff;
+    color: #fff !important;
     z-index: 999;
 }
 
