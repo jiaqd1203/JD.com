@@ -513,6 +513,7 @@ float: right;
     width: 190px;
     height: 480px;
     float: left;
+    position: relative;
 }
 
 .mainmenu-list{
@@ -526,6 +527,12 @@ float: right;
     color: #c81623;
 }
 
+.mainmenu-list li:first-child i{
+    margin-left: 5px;
+    font-size: 15px;
+    color: #c81623;
+}
+
 .mainmenu-list li{
     height: 25px;
     line-height: 25px;
@@ -534,6 +541,10 @@ float: right;
 
 .mainmenu-list li:hover{
     background-color:#d9d9d9;
+}
+/* .sub-menu必须得是这个li的子元素 */
+.mainmenu-list li:hover .sub-menu{
+    display: block;
 }
 
 .mainmenu-list span{
@@ -548,6 +559,145 @@ float: right;
 
 .mainmenu-list a:hover{
     color: #c81623;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 191px;
+    top: 10px;
+    width: 998px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    z-index: 100;
+}
+
+.sub-menu .category{
+    padding: 20px 0 10px;
+}
+
+.sub-menu .cate-part1{
+    float: left;
+    width: 800px;
+    background-color: #fff;
+}
+
+.sub-menu .cate-part1 .cate-channel{
+    overflow: hidden;
+    padding-left: 20px;
+    height: 24px;
+}
+
+.sub-menu .cate-part1 .cate-channel a{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.sub-menu .category .cate-part1 .cate-channel a:hover{
+    background-color: #c81623;
+}
+
+.sub-menu .cate-part1 .cate-channel a i{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.sub-menu .cate-part1 .cate-detail{
+    overflow: hidden;
+    padding: 10px 0 0 20px;
+}
+
+.cate-detail .cate-detail-item{
+    display: block;
+    margin: 5px auto;
+    /* 防止溢出 */
+    overflow: hidden;
+}
+
+.cate-detail .cate-detail-title{
+    float: left;
+    width: 70px;
+    height: 18px;
+    line-height: 18px;
+    text-align: right;
+    margin: 3px auto;
+}
+
+.cate-detail .cate-detail-title{
+    color: #333;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cate-detail .cate-detail-title:hover{
+    color: #c81623;
+}
+
+.category .cate-detail .cate-detail-title:hover i{
+    color: #c81623;
+}
+
+.category .cate-detail .cate-detail-title i{
+    color: #333;
+    margin-left: 5px;
+}
+
+.cate-detail .cate-detail-content{
+    /* 如果加上下面的float，content的内容全部到title下面了，
+    float的内容并没有一行显示，去掉floatleft恢复正常？？ */
+    /* float: left;*/
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.category .cate-detail .cate-detail-content a{
+    /* display: inline-block; */
+    float: left;
+    margin: 3px 0;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 7px;
+    color: #666;
+    cursor: pointer;
+}
+
+.cate-detail .cate-detail-content a:hover{
+    color: #c81623;
+}
+
+.sub-menu .cate-part2{
+    float: left;
+    width: 198px;
+}
+
+.sub-menu .cate-part2 .cate-brand{
+    width: 168px;
+    margin-left: 15px;
+}
+
+.sub-menu .cate-part2 .cate-brand img{
+    width: 83px;
+    height: 35px;
+    float: left;
+    background-color: #e7e7e7;
+    margin: 0 1px 1px 0;
+}
+
+.sub-menu .cate-part2 .cate-promotion{
+    margin: 10px auto 8px;
+    width: 168px;
+}
+
+.sub-menu .cate-part2 .cate-promotion img{
+    width: 168px;
+    height: 134px;
+    background-color: #e7e7e7;
 }
 
 .slider-wrap{
