@@ -384,7 +384,7 @@ float: right;
 }
 /* 不起作用 */
 .search .upload-bg:hover{
-    background-color: url(../../img/sprite-photo-search1.png) no-repeat;
+    background-color: url(https://github.com/jiaqd1203/JD.com/blob/main/img/sprite-photo-search1.png?raw=true) no-repeat;
 }
 
 .search button{
