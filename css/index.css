@@ -18,7 +18,7 @@
     width: 1380px;
     height: 80px;
     /* 它的路径是相对于css文件夹算的，与html的不一样，所以在github上需要先向上跳两级在选择img */
-    background-image: url(../../img/top-banner.png.webp);
+    background-image: url("../img/top-banner.png.webp");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
