@@ -457,6 +457,7 @@ float: right;
 
 .mainmenu-list li:hover .sub-menu{
     display: block;
+    z-index: 1000;
 }
 
 .mainmenu-list span{
