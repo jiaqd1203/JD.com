@@ -533,14 +533,11 @@ float: right;
 
 .cate-detail .cate-detail-title{
     float: left;
-    width: 70px;
+    width: 120px;
     height: 18px;
     line-height: 18px;
     text-align: right;
     margin: 3px auto;
-}
-
-.cate-detail .cate-detail-title{
     color: #333;
     font-weight: 700;
     cursor: pointer;
@@ -626,6 +623,11 @@ float: right;
 .slider #imgList{
     position: absolute;
     left: 0;
+}
+
+.slider #imgList img{
+    width: 590px;
+    height: 470px;
 }
 
 .slider button{
