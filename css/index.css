@@ -1257,7 +1257,7 @@ float: right;
 
 .activity-main{
     width: 1190px;
-    height: 440px;
+    height: 480px;
     margin-left: 40px;
     margin-top: 145px;
     float: left;
@@ -1265,7 +1265,7 @@ float: right;
 
 .activity-sku{
     width: 1000px;
-    height: 440px;
+    height: 480px;
     float: left;
 }
 
@@ -1273,7 +1273,7 @@ float: right;
     width: 190px;
     height: 210px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     background-color: #fff;
     background-image: url(https://raw.githubusercontent.com/jiaqd1203/JD.com/main/img/sku-back.png!cc_190x210.webp);
     float: left;
@@ -1337,8 +1337,8 @@ float: right;
 
 .shop-item{
     width: 190px;
-    height: 100px;
-    margin-bottom: 10px;
+    height: 120px;
+    margin-top: 0;
     background-color: #fff;
     border-radius: 5px;
     cursor: pointer;
