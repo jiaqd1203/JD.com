@@ -1352,7 +1352,6 @@ float: right;
 .mod-service{
     width: 100%;
     padding: 30px 0;
-    border-bottom: 1px solid #dedede;
 }
 
 .mod-service-list{
@@ -1400,10 +1399,11 @@ float: right;
 }
 .mod-help{
     padding: 20px 0;
+    border-bottom: 1px solid #cfcece;
 }
 
 .mod-help-inner{
-    width: 990px;
+    width: 1190px;
     margin: 0 auto;
 }
 
@@ -1413,18 +1413,26 @@ float: right;
 
 .mod-help-list{
     float: left;
-    width: 158px;
+    width: 238px;
+    text-align: center;
 }
 
-.mod-help-title{
+.mod-help-item{
+    text-align: center;
+    display: inline-block;
+}
+
+.mod-help-title{  
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 5px;
+    text-align: left;   
 }
 
 .mod-help-content{
     color: #636363;
     margin-bottom: 3px;
+    text-align: left;    
 }
 
 .mod-help-content li{
@@ -1433,33 +1441,6 @@ float: right;
 
 .mod-help-content li a{
     color: #666;
-}
-
-.mod-help-cover{
-    float: left;
-    width: 200px;
-}
-
-.mod-help-cover-title{
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.mod-help-cover-content{
-    color: #636363;
-}
-
-.mod-help-cover-content .mod-help-cover-more{
-    text-align: right;
-}
-
-.mod-help-cover-content .mod-help-cover-more a{
-    color: #666;
-}
-
-.mod-help-cover-content .mod-help-cover-more a:hover{
-    color: #c81623;
 }
 
 .mod-copyright-content{
