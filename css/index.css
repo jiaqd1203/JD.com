@@ -1251,7 +1251,7 @@ float: right;
 .activity{
     width: 1270px;
     height: 590px;
-    margin: 30px auto;
+    margin: 10px auto;
     margin-bottom: 0;
 }
 
@@ -1344,6 +1344,11 @@ float: right;
     cursor: pointer;
 }
 
+.footer{
+    margin-top: 100px;
+    background-color: #e0dfdf;
+}
+
 .mod-service{
     width: 100%;
     padding: 30px 0;
@@ -1351,28 +1356,26 @@ float: right;
 }
 
 .mod-service-list{
+    margin: 20px auto;
     width: 1190px;
-    margin: 0 auto;
-    width: 1190px;
-    height: 42px;
+    border-bottom: 1px solid #cfcece;
 }
 
 .mod-service-list .mod-service-item{
     float: left;
-    width: 252px;
+    width: 238px;
     list-style: none;
     text-align: center;
-    padding-left: 45px;
+    margin-bottom: 20px;
 }
 
 .mod-service-list .mod-service-item .mod-service-item-title{
-    float: left;
     width: 36px;
     height: 42px;
 }
 
 .mod-service-list .mod-service-item .mod-service-item-text{
-    float: left;
+    display: block;
     height: 42px;
     line-height: 42px;
     font-weight: 700;
@@ -1381,7 +1384,14 @@ float: right;
     color: #444;
     overflow: hidden;
     font-size: 18px;
-    margin-left: 10px;
+}
+
+.mod-service-list .mod-service-item p{
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+    font-size: 14px;
+    color: #999;
 }
 
 .space{
