@@ -1515,6 +1515,14 @@ float: right;
     padding: 0 5px;
 }
 
+.copyright{
+    width: 100%;
+    height: 25px;
+    border-top: 1px solid #cfcece;
+    text-align: center;
+    line-height: 25px;
+}
+
 #elevator{
    position: fixed;
    width: 60px;
