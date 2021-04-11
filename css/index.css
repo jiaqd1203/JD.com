@@ -1393,10 +1393,6 @@ float: right;
     color: #999;
 }
 
-.space{
-    width: 100%;
-    height: 300px;
-}
 .mod-help{
     padding: 20px 0;
     border-bottom: 1px solid #cfcece;
@@ -1424,7 +1420,7 @@ float: right;
 
 .mod-help-title{  
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 5px;
     text-align: left;   
 }
@@ -1443,70 +1439,80 @@ float: right;
     color: #666;
 }
 
-.mod-copyright-content{
-    padding: 10px 0;
-}
-
-.mod-copyright-content a{
-    color: #999;
-}
-
-.mod-copyright-inner{
-    width: 990px;
-    border-top: 1px solid #e1e1e1;
+.mod-info{
+    width: 1190px;
     margin: 0 auto;
-    text-align: center;
-    padding: 15px 0;
+    background-color: #e0dfdf;
 }
 
-.mod-copyright-link a{
-    color: #666;
+.mod-info .mod-info-inner{
+    margin: 25px auto;
 }
 
-.mod-copyright-link a:hover{
-    color: #c81623;
+.mod-info .mod-info-inner span{
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    width: 119px;
+    height: 25px;
+    display: block;
+    margin: 5px auto;
 }
 
-.mod-copyright-content p{
-    margin-bottom: 5px;
+.mod-info .mod-info-inner img{
+    height: 35px;
 }
 
-.mod-copyright-inter{
-    margin-bottom: 5px;
+.mod-info .mod-info-left{
+    float: left;
+    width: 595px;
 }
 
-.mod-copyright-inner a:hover{
-    color: #c81623;
+.mod-info .mod-info-left div{
+    height: 35px;
+    margin: 10px auto;
 }
 
-.mod-copyright-inner .split{
-    color: #ccc;
-    margin: 0 3px;
+.mod-info .mod-info-right{
+    float: left;
+    width: 595px;
 }
 
-.mod-copyright-inner .mod-copyright-content .split{
-    color: #ccc;
-    margin: 0 10px;
+.mod-info .mod-info-right img{
+    width:453px;
+    height: 118px;
 }
 
-.mod-copyright-inner .mod-copyright-content span{
-    color: #999;
+.mod-info .mod-info-right .pay-with{
+    margin: 10px auto;
 }
 
-.mod-copyright-inter img{
-    width: 18px;
-    height: 12px;
+.mod-info .mod-info-right .sign-up{
+    height: 35px;
+    margin: 10px auto;
 }
 
-.mod-copyright-authentic{
-    width: 990px;
-    margin: 25px 0;
-}
-
-.mod-copyright-authentic img{
-    width: 95px;
+.mod-info .mod-info-right .sign-up .subscribe{
+    float: right;
+    width: 100px;
     height: 30px;
-    margin: 0 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background-color: #e1251b;
+    margin: 0;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.mod-info .mod-info-right .sign-up .email{
+    float: right;
+    height: 30px;
+    width: 350px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
 }
 
 #elevator{

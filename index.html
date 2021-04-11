@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,830 +13,839 @@
     <meta name="Keywords" content="JD shopping">
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/tools.js"></script>
-    <script type="text/javascript">    
-        var maxtime = 60*60*12;
-        var time = setInterval("countdown()",1000);        
-        function countdown(){
-            if(maxtime >= 0){
-                var hours = Math.floor(maxtime/3600);
-                var minutes = Math.floor(maxtime%3600/60);
-                var seconds = Math.floor(maxtime%3600%60);
-                if(hours<10){
+    <script type="text/javascript">
+        var maxtime = 60 * 60 * 12;
+        var time = setInterval("countdown()", 1000);
+        function countdown() {
+            if (maxtime >= 0) {
+                var hours = Math.floor(maxtime / 3600);
+                var minutes = Math.floor(maxtime % 3600 / 60);
+                var seconds = Math.floor(maxtime % 3600 % 60);
+                if (hours < 10) {
                     hours = "0" + hours;
                 }
-                if(minutes<10){
+                if (minutes < 10) {
                     minutes = "0" + minutes;
                 }
-                if (seconds<10){
+                if (seconds < 10) {
                     seconds = "0" + seconds;
                 }
                 document.getElementById('timer-hour').innerHTML = hours;
                 document.getElementById('timer-minute').innerHTML = minutes;
                 document.getElementById('timer-second').innerHTML = seconds;
                 maxtime--;
-            }else{
+            } else {
                 clearInterval(time);
             }
-        }    
+        }
     </script>
 </head>
-<body>    
-        <!-- nav -->
-        <div class="nav-wrap clearfix">
-            <div class="nav">
-                <ul class="left-nav">
-                    <li class="currency">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="javascript:;">Currency</a>
-                    </li>    
-                    <li class="cur-list">
-                        <ul class="cur">
-                            <li><a href="javascript>:;">GBP</a></li>
-                            <li><a href="javascript>:;">CNY</a></li>
-                            <li><a href="javascript>:;">EUR</a></li>
-                            <li><a href="javascript>:;">USD</a></li>
-                            <li><a href="javascript>:;">DKK</a></li>
-                            <li><a href="javascript>:;">PLN</a></li>
-                            <li><a href="javascript>:;">SEK</a></li>
-                            <li><a href="javascript>:;">AUD</a></li>
-                            <li><a href="javascript>:;">CAD</a></li>
-                            <li><a href="javascript>:;">AED</a></li>
-                            <li><a href="javascript>:;">NZD</a></li>
-                            <li><a href="javascript>:;">BEF</a></li>
-                            <li><a href="javascript>:;">BRL</a></li>
-                            <li><a href="javascript>:;">CHF</a></li>
-                            <li><a href="javascript>:;">CZK</a></li>
-                            <li><a href="javascript>:;">DOP</a></li>
-                            <li><a href="javascript>:;">EGP</a></li>
-                            <li><a href="javascript>:;">HKD</a></li>
-                            <li><a href="javascript>:;">HUF</a></li>
-                            <li><a href="javascript>:;">INR</a></li>
-                            <li><a href="javascript>:;">JMD</a></li>
-                            <li><a href="javascript>:;">JPY</a></li>
-                            <li><a href="javascript>:;">KZT</a></li>
-                            <li><a href="javascript>:;">KES</a></li>
-                            <li><a href="javascript>:;">MYR</a></li>
-                            <li><a href="javascript>:;">NGN</a></li>
-                            <li><a href="javascript>:;">NOK</a></li>
-                            <li><a href="javascript>:;">PAB</a></li>
-                            <li><a href="javascript>:;">PHP</a></li>
-                            <li><a href="javascript>:;">QAR</a></li>
-                            <li><a href="javascript>:;">RUB</a></li>
-                            <li><a href="javascript>:;">SAR</a></li>
-                            <li><a href="javascript>:;">SGD</a></li>
-                            <li><a href="javascript>:;">THB</a></li>
-                            <li><a href="javascript>:;">TRY</a></li>
+
+<body>
+    <!-- nav -->
+    <div class="nav-wrap clearfix">
+        <div class="nav">
+            <ul class="left-nav">
+                <li class="currency">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">Currency</a>
+                </li>
+                <li class="cur-list">
+                    <ul class="cur">
+                        <li><a href="javascript>:;">GBP</a></li>
+                        <li><a href="javascript>:;">CNY</a></li>
+                        <li><a href="javascript>:;">EUR</a></li>
+                        <li><a href="javascript>:;">USD</a></li>
+                        <li><a href="javascript>:;">DKK</a></li>
+                        <li><a href="javascript>:;">PLN</a></li>
+                        <li><a href="javascript>:;">SEK</a></li>
+                        <li><a href="javascript>:;">AUD</a></li>
+                        <li><a href="javascript>:;">CAD</a></li>
+                        <li><a href="javascript>:;">AED</a></li>
+                        <li><a href="javascript>:;">NZD</a></li>
+                        <li><a href="javascript>:;">BEF</a></li>
+                        <li><a href="javascript>:;">BRL</a></li>
+                        <li><a href="javascript>:;">CHF</a></li>
+                        <li><a href="javascript>:;">CZK</a></li>
+                        <li><a href="javascript>:;">DOP</a></li>
+                        <li><a href="javascript>:;">EGP</a></li>
+                        <li><a href="javascript>:;">HKD</a></li>
+                        <li><a href="javascript>:;">HUF</a></li>
+                        <li><a href="javascript>:;">INR</a></li>
+                        <li><a href="javascript>:;">JMD</a></li>
+                        <li><a href="javascript>:;">JPY</a></li>
+                        <li><a href="javascript>:;">KZT</a></li>
+                        <li><a href="javascript>:;">KES</a></li>
+                        <li><a href="javascript>:;">MYR</a></li>
+                        <li><a href="javascript>:;">NGN</a></li>
+                        <li><a href="javascript>:;">NOK</a></li>
+                        <li><a href="javascript>:;">PAB</a></li>
+                        <li><a href="javascript>:;">PHP</a></li>
+                        <li><a href="javascript>:;">QAR</a></li>
+                        <li><a href="javascript>:;">RUB</a></li>
+                        <li><a href="javascript>:;">SAR</a></li>
+                        <li><a href="javascript>:;">SGD</a></li>
+                        <li><a href="javascript>:;">THB</a></li>
+                        <li><a href="javascript>:;">TRY</a></li>
+                    </ul>
+                    <div class="aLine"></div>
+                    <p>Available Sites</p>
+                    <ul class="district">
+                        <li><a href="javascript>:;">Global Site</a></li>
+                        <li><a href="javascript>:;">Сайт России</a></li>
+                        <li><a href="javascript>:;">Situs Indonesia</a></li>
+                        <li><a href="javascript>:;">Sitio de España</a></li>
+                        <li><a href="javascript>:;">เว็บไซต์ประเทศไทย</a></li>
+                    </ul>
+        </div>
+        </li>
+        </ul>
+        <ul class="right-nav">
+            <li><a href="javascript:;" class="login">Log in</a></li>
+            <li><a href="javascript:;" class="highlight">Sign up</a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">Orders</a></li>
+            <li class="line"></li>
+            <li class="dropdown">
+                <ul>
+                    <li class="myjd">
+                        <a href="javascript:;">Account</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
+                    <li class="myjd-list">
+                        <ul class="myinfo">
+                            <li><a href="javascript>:;">Account</a></li>
+                            <li><a href="javascript>:;">Orders</a></li>
+                            <li><a href="javascript>:;">Lists</a></li>
+                            <li><a href="javascript>:;">Subscriptions</a></li>
+                            <li><a href="javascript>:;">Save Items</a></li>
                         </ul>
-                            <div class="aLine"></div>
-                            <p>Available Sites</p>
-                            <ul class="district">
-                                <li><a href="javascript>:;">Global Site</a></li>
-                                <li><a href="javascript>:;">Сайт России</a></li>
-                                <li><a href="javascript>:;">Situs Indonesia</a></li>
-                                <li><a href="javascript>:;">Sitio de España</a></li>
-                                <li><a href="javascript>:;">เว็บไซต์ประเทศไทย</a></li>
-                            </ul>
-                        </div>
+                        <div class="aLine"></div>
+                        <ul class="myinfo myinfo2">
+                            <li><a href="javascript>:;">Games</a></li>
+                            <li><a href="javascript>:;">Video</a></li>
+                            <li><a href="javascript>:;">Music</a></li>
+                            <li><a href="javascript>:;">Books</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <ul class="right-nav">
-                    <li><a href="javascript:;" class="login">Log in</a></li>
-                    <li><a href="javascript:;" class="highlight">Sign up</a></li>
-                    <li class="line"></li>
-                    <li><a href="javascript:;">Orders</a></li>
-                    <li class="line"></li>
-                    <li class="dropdown">
-                        <ul>
-                            <li class="myjd">
-                                <a href="javascript:;">Account</a>
-                                <i class="fas fa-chevron-down"></i>
-                            </li>
-                            <li class="myjd-list">
-                                <ul class="myinfo">
-                                    <li><a href="javascript>:;">Account</a></li>
-                                    <li><a href="javascript>:;">Orders</a></li>
-                                    <li><a href="javascript>:;">Lists</a></li>
-                                    <li><a href="javascript>:;">Subscriptions</a></li>
-                                    <li><a href="javascript>:;">Save Items</a></li>
-                                </ul>
-                                <div class="aLine"></div>
-                                <ul class="myinfo myinfo2">
-                                    <li><a href="javascript>:;">Games</a></li>
-                                    <li><a href="javascript>:;">Video</a></li>
-                                    <li><a href="javascript>:;">Music</a></li>
-                                    <li><a href="javascript>:;">Books</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="line"></li>
-                    <li><a href="javascript:;">Membership</a></li>
-                    <li class="line"></li>
-                    <li class="purchase-dropdown">
-                        <div class="purchase">
-                            <a href="javascript:;" class="highlight">Your Lists</a>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <ul class="purchase-list">
-                            <li><a href="javascript>:;">Find a List</a></li>
-                            <li><a href="javascript>:;">Find a Gift</a></li>
-                            <li><a href="javascript>:;">WatchList</a></li>
-                            <li><a href="javascript>:;">WishList</a></li>
-                        </ul>
-                    </li>    
-                    <li class="line"></li>
-                    <li><span>Message</span></li>
-                    <li class="line"></li>
-                    <li><span>Help</span></li>
-                    <li class="line"></li>
-                    <li><span>Mobile App</span></li>
+            </li>
+            <li class="line"></li>
+            <li><a href="javascript:;">Membership</a></li>
+            <li class="line"></li>
+            <li class="purchase-dropdown">
+                <div class="purchase">
+                    <a href="javascript:;" class="highlight">Your Lists</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="purchase-list">
+                    <li><a href="javascript>:;">Find a List</a></li>
+                    <li><a href="javascript>:;">Find a Gift</a></li>
+                    <li><a href="javascript>:;">WatchList</a></li>
+                    <li><a href="javascript>:;">WishList</a></li>
                 </ul>
+            </li>
+            <li class="line"></li>
+            <li><span>Message</span></li>
+            <li class="line"></li>
+            <li><span>Help</span></li>
+            <li class="line"></li>
+            <li><span>Mobile App</span></li>
+        </ul>
+    </div>
+    </div>
+    <!-- head -->
+    <div class="header-wrap">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="" class="logo-image">
+            </div>
+            <div class="search">
+                <form action="">
+                    <span class="upload-bg"></span>
+                    <input type="text" class="text" placeholder="iphone">
+                </form>
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="shopping-count">0</i>
+                <a href="">Cart</a>
+            </div>
+            <div class="hotwords">
+                <a href="">Phones</a>
+                <a href="">Computer</a>
+                <a href="">Clothing</a>
+                <a href="">Sports</a>
+                <a href="">Home</a>
+                <a href="">Garden</a>
+                <a href="">Toys</a>
+                <a href="">Books</a>
+            </div>
+            <div class="nav-items">
+                <a href="" class="redA">Wholesale Zone</a>
+                <a href="" class="redA">Super Deals</a>
+                <a href="">Joy Collection</a>
+                <a href="">Electronics</a>
+                <a href="">Appliances</a>
+                <a href="">Supermarket</a>
+                <a href="">Food</a>
+                <a href="">Accessories</a>
             </div>
         </div>
-        <!-- head -->
-        <div class="header-wrap">
-            <div class="header">
-                <div class="logo">
-                    <img src="img/logo.png" alt="" class="logo-image">
-                </div>
-                <div class="search">
-                    <form action="">
-                        <span class="upload-bg"></span>
-                        <input type="text" class="text" placeholder="iphone">
-                    </form>
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <div class="shopping-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="shopping-count">0</i>
-                    <a href="">Cart</a>
-                </div>
-                <div class="hotwords">
-                    <a href="">Phones</a>
-                    <a href="">Computer</a>
-                    <a href="">Clothing</a>
-                    <a href="">Sports</a>
-                    <a href="">Home</a>
-                    <a href="">Garden</a>
-                    <a href="">Toys</a>
-                    <a href="">Books</a>
-                </div>
-                <div class="nav-items">
-                    <a href="" class="redA">Wholesale Zone</a>
-                    <a href="" class="redA">Super Deals</a>
-                    <a href="">Joy Collection</a>
-                    <a href="">Electronics</a>
-                    <a href="">Appliances</a>
-                    <a href="">Supermarket</a>
-                    <a href="">Food</a>
-                    <a href="">Accessories</a>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrap">
-            <div class="content w clearfix">
-                <div class="mainmenu">
-                    <ul class="mainmenu-list">
-                        <li>
-                            <a href="">Home Appliances</a>
-                            <i class="far fa-hand-point-left"></i>
-                            <div class="sub-menu">
-                                <div class="category clearfix">
-                                    <div class="cate-part1">
-                                        <div class="cate-channel">
-                                            <a href="">Kitchen Appliances<i class="fas fa-angle-right"></i></a>
-                                            <a href="">Home Improvement<i class="fas fa-angle-right"></i></a>
-                                            <a href="">Health Care<i class="fas fa-angle-right"></i></a>
-                                            <a href="">Home Audio Equipment<i class="fas fa-angle-right"></i></a>
-                                        </div>
-                                        <div class="cate-detail">
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">TV<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">JVC</a>
-                                                    <a href="">Panasonic</a>
-                                                    <a href="">Sony</a>
-                                                    <a href="">Samsung</a>
-                                                    <a href="">LG</a>
-                                                    <a href="">OLED</a>
-                                                    <a href="">QLED</a>
-                                                    <a href="">Smart TVs</a>
-                                                    <a href="">8K TVs</a>
-                                                    <a href="">4K Ultra HD TVs</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Air treatment<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Air conditioning</a>
-                                                    <a href="">Air purifiers</a>
-                                                    <a href="">Dehumidifiers</a>
-                                                    <a href="">Fans</a>
-                                                    <a href="">Heaters</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Washing machine<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Freestanding</a>
-                                                    <a href="">Integrated</a>
-                                                    <a href="">Bosch</a>
-                                                    <a href="">Samsung</a>
-                                                    <a href="">Hotpoint</a>
-                                                    <a href="">Beko</a>
-                                                    <a href="">Hoover</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Fridge<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Freestanding</a>
-                                                    <a href="">Integrated</a>
-                                                    <a href="">Bosch</a>
-                                                    <a href="">Samsung</a>
-                                                    <a href="">LG</a>
-                                                    <a href="">Beko</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Cooking<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Gas</a>
-                                                    <a href="">Electric</a>
-                                                    <a href="">Dual fuel</a>
-                                                    <a href="">Range</a>
-                                                    <a href="">Hotpoint</a>
-                                                    <a href="">Beko</a>
-                                                    <a href="">AEG</a>
-                                                    <a href="">Rangemaster</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Microwaves<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Freestanding</a>
-                                                    <a href="">Built-in</a>
-                                                    <a href="">Combination</a>
-                                                    <a href="">Kenwood</a>
-                                                    <a href="">Panasonic</a>
-                                                    <a href="">Samsung</a>
-                                                    <a href="">Russell Hobbs</a> 
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Dishwashers<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Freestanding</a>
-                                                    <a href="">Integrated</a>
-                                                    <a href="">Slimline</a>
-                                                    <a href="">Full-size</a>
-                                                    <a href="">Table top</a>
-                                                    <a href="">Bosch</a>
-                                                    <a href="">Beko</a>
-                                                    <a href="">Kenwood</a>
-                                                    <a href="">Hotpoint</a>
-                                                    <a href="">Miele</a>                                           
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Coffee machines<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Bean to cup</a>
-                                                    <a href="">Pod machines</a>
-                                                    <a href="">Filter machines</a>                                                    
-                                                    <a href="">Espresso machines</a>
-                                                    <a href="">Nespresso</a>
-                                                    <a href="">Delonghi</a>
-                                                    <a href="">Tassimo</a>
-                                                    <a href="">Sage</a>
-                                                    <a href="">Dolce Gusto</a>
-                                                </dd>
-                                            </dl>
-                                            <dl class="cate-detail-item clearfix">
-                                                <dt class="cate-detail-title">Ironing<i class="fas fa-angle-right"></i></dt>
-                                                <dd class="cate-detail-content">
-                                                    <a href="">Tefal</a>
-                                                    <a href="">Philips</a>
-                                                    <a href="">Russell Hobbs</a>
-                                                    <a href="">Bosch</a>
-                                                    <a href="">Braun</a>
-                                                </dd>
-                                            </dl>
-                                        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="content w clearfix">
+            <div class="mainmenu">
+                <ul class="mainmenu-list">
+                    <li>
+                        <a href="">Home Appliances</a>
+                        <i class="far fa-hand-point-left"></i>
+                        <div class="sub-menu">
+                            <div class="category clearfix">
+                                <div class="cate-part1">
+                                    <div class="cate-channel">
+                                        <a href="">Kitchen Appliances<i class="fas fa-angle-right"></i></a>
+                                        <a href="">Home Improvement<i class="fas fa-angle-right"></i></a>
+                                        <a href="">Health Care<i class="fas fa-angle-right"></i></a>
+                                        <a href="">Home Audio Equipment<i class="fas fa-angle-right"></i></a>
                                     </div>
-                                    <div class="cate-part2">
-                                        <div>
-                                            <div class="cate-brand clearfix">
-                                                <a href=""><img src="img/cate1.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate2.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate3.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate4.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate5.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate6.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate7.jpg.webp" alt=""></a>
-                                                <a href=""><img src="img/cate8.jpg.webp" alt=""></a>
-                                            </div>
-                                            <div class="cate-promotion">
-                                                <a href=""><img src="img/catepromo1.png.webp" alt=""></a>
-                                                <a href=""><img src="img/catepromo2.png.webp" alt=""></a>
-                                            </div>
-                                        </div>
+                                    <div class="cate-detail">
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">TV<i class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">JVC</a>
+                                                <a href="">Panasonic</a>
+                                                <a href="">Sony</a>
+                                                <a href="">Samsung</a>
+                                                <a href="">LG</a>
+                                                <a href="">OLED</a>
+                                                <a href="">QLED</a>
+                                                <a href="">Smart TVs</a>
+                                                <a href="">8K TVs</a>
+                                                <a href="">4K Ultra HD TVs</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Air treatment<i
+                                                    class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Air conditioning</a>
+                                                <a href="">Air purifiers</a>
+                                                <a href="">Dehumidifiers</a>
+                                                <a href="">Fans</a>
+                                                <a href="">Heaters</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Washing machine<i
+                                                    class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Freestanding</a>
+                                                <a href="">Integrated</a>
+                                                <a href="">Bosch</a>
+                                                <a href="">Samsung</a>
+                                                <a href="">Hotpoint</a>
+                                                <a href="">Beko</a>
+                                                <a href="">Hoover</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Fridge<i class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Freestanding</a>
+                                                <a href="">Integrated</a>
+                                                <a href="">Bosch</a>
+                                                <a href="">Samsung</a>
+                                                <a href="">LG</a>
+                                                <a href="">Beko</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Cooking<i class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Gas</a>
+                                                <a href="">Electric</a>
+                                                <a href="">Dual fuel</a>
+                                                <a href="">Range</a>
+                                                <a href="">Hotpoint</a>
+                                                <a href="">Beko</a>
+                                                <a href="">AEG</a>
+                                                <a href="">Rangemaster</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Microwaves<i class="fas fa-angle-right"></i>
+                                            </dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Freestanding</a>
+                                                <a href="">Built-in</a>
+                                                <a href="">Combination</a>
+                                                <a href="">Kenwood</a>
+                                                <a href="">Panasonic</a>
+                                                <a href="">Samsung</a>
+                                                <a href="">Russell Hobbs</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Dishwashers<i class="fas fa-angle-right"></i>
+                                            </dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Freestanding</a>
+                                                <a href="">Integrated</a>
+                                                <a href="">Slimline</a>
+                                                <a href="">Full-size</a>
+                                                <a href="">Table top</a>
+                                                <a href="">Bosch</a>
+                                                <a href="">Beko</a>
+                                                <a href="">Kenwood</a>
+                                                <a href="">Hotpoint</a>
+                                                <a href="">Miele</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Coffee machines<i
+                                                    class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Bean to cup</a>
+                                                <a href="">Pod machines</a>
+                                                <a href="">Filter machines</a>
+                                                <a href="">Espresso machines</a>
+                                                <a href="">Nespresso</a>
+                                                <a href="">Delonghi</a>
+                                                <a href="">Tassimo</a>
+                                                <a href="">Sage</a>
+                                                <a href="">Dolce Gusto</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="cate-detail-item clearfix">
+                                            <dt class="cate-detail-title">Ironing<i class="fas fa-angle-right"></i></dt>
+                                            <dd class="cate-detail-content">
+                                                <a href="">Tefal</a>
+                                                <a href="">Philips</a>
+                                                <a href="">Russell Hobbs</a>
+                                                <a href="">Bosch</a>
+                                                <a href="">Braun</a>
+                                            </dd>
+                                        </dl>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">Phones</a>
-                            <span>&</span>
-                            <a href="">Accessories</a>                            
-                        </li>
-                        <li>
-                            <a href="">Consumer Electronics</a>
-                        </li>
-                        <li>
-                            <a href="">Computer</a>
-                            <span>&</span>
-                            <a href="">Office</a>
-                        </li>
-                        <li>
-                            <a href="">Wigs</a>
-                            <span>&</span>
-                            <a href="">Hair Extensions</a>
-                        </li>
-                        <li>
-                            <a href="">Women's Clothing</a>
-                        </li>
-                        <li>
-                            <a href="">Men's Clothing</a>
-                        </li>
-                        <li>
-                            <a href="">Sports</a>
-                            <span>&</span>
-                            <a href="">Outdoors</a>
-                        </li>
-                        <li>
-                            <a href="">Home</a>
-                            <span>&</span>
-                            <a href="">Garden</a>
-                        </li>
-                        <li>
-                            <a href="">Health</a>
-                            <span>&</span>
-                            <a href="">Beauty</a>
-                        </li>
-                        <li>
-                            <a href="">Toys,Kids</a>
-                            <span>&</span>
-                            <a href="">Babies</a>
-                        </li>
-                        <li>
-                            <a href="">Shoes</a>
-                            <span>&</span>
-                            <a href="">Bags</a>
-                        </li>
-                        <li>
-                            <a href="">Jewelry</a>
-                            <span>&</span>
-                            <a href="">Watches</a>
-                        </li>
-                        <li>
-                            <a href="">Automotive</a>
-                            <span>&</span>
-                            <a href="">Motors</a>
-                        </li>
-                        <li>
-                            <a href="">All Categories</a>
-                        </li>    
-                    </ul>                    
-                </div>
-                <div class="slider-wrap">
-                    <div class="slider" id="slider">
-                        <ul id="imgList">
-                            <li><a><img src="img/l1.jpg" alt=""></a></li>
-                            <li><a><img src="img/l2.jpg" alt=""></a></li>
-                            <li><a><img src="img/l3.jpg" alt=""></a></li>
-                            <li><a><img src="img/l4.jpg" alt=""></a></li>
-                            <li><a><img src="img/l5.jpg" alt=""></a></li>
-                            <li><a><img src="img/l6.jpg" alt=""></a></li>
-                            <li><a><img src="img/l7.jpg" alt=""></a></li>
-                            <li><a><img src="img/l8.jpg" alt=""></a></li>
-                        </ul>
-                        <button class="btn-prev"><i class="fas fa-angle-left"></i></button>
-                        <button class="btn-next"><i class="fas fa-angle-right"></i></button>
-                        <div id="pointer">
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                        </div>
-                    </div>
-                </div>
-                <ul id="ad-boxwrap">
-                    <li class="ad-box">
-                        <a href="javascript:;"><img src="img/a1.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a2.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a3.jpg" alt=""></a>
-                    </li>
-    
-                    <li class="ad-box">
-                        <a href="javascript:;"><img src="img/a4.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a5.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a6.jpg" alt=""></a>
-                    </li>
-    
-                    <li class="ad-box">
-                        <a href="javascript:;"><img src="img/a7.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a8.jpg" alt=""></a>
-                        <a href="javascript:;"><img src="img/a9.jpg" alt=""></a>
-                    </li>
-                    <button class="btn-ad-prev"><i class="fas fa-angle-left"></i></button>
-                    <button class="btn-ad-next"><i class="fas fa-angle-right"></i></button>
-                </ul>
-                <div class="function-wrap">
-                    <div class="user">
-                        <a href=""><img src="img/small-logo.png" alt=""> </a>
-                        <div class="user-show">
-                            <a href="">Hi~Welcome！</a>
-                            <p>
-                                <a href="">Sign in</a>
-                                &nbsp;|&nbsp;
-                                <a href="">Sign up</a>
-                            </p>
-                        </div>
-                        <div class="user-profit">
-                            <a href="" class="user-profit-new">New</a>
-                            <a href="" class="user-profit-plus">Members</a>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="news-head">
-                            <h3>Deals</h3>
-                            <a href="">more></a>
-                        </div>
-                        <ul class="news-content">
-                            <li><a href="">Inspired by your shopping trends</a></li>
-                            <li><a href="">Inspired by your purchases</a></li>
-                            <li><a href="">Recommended items similar to your previous purchases</a></li>
-                            <li><a href="">Recommendations for you in Health & Personal Care</a></li>
-                        </ul>
-                    </div>
-                    <div class="function">
-                        <ul class="function-list">
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f1.png" alt="" class="function-item-img">
-                                        <img src="img/f1.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Top-up</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f2.png" alt="" class="function-item-img">
-                                        <img src="img/f2.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Flights</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f3.png" alt="" class="function-item-img">
-                                        <img src="img/f3.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Hotel</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f4.png" alt="" class="function-item-img">
-                                        <img src="img/f4.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Game</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f5.png" alt="" class="function-item-img">
-                                        <img src="img/f5.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Gas</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f6.png" alt="" class="function-item-img">
-                                        <img src="img/f6.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Train</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f7.png" alt="" class="function-item-img">
-                                        <img src="img/f7.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Charity</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f8.png" alt="" class="function-item-img">
-                                        <img src="img/f8.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Wealth</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f9.png" alt="" class="function-item-img">
-                                        <img src="img/f9.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Loan</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f10.png" alt="" class="function-item-img">
-                                        <img src="img/f10.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Film</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f11.png" alt="" class="function-item-img">
-                                        <img src="img/f11.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Business</span>
-                                </a>
-                            </li>
-                            <li class="function-item">
-                                <a href="">
-                                    <i>
-                                        <img src="img/f12.png" alt="" class="function-item-img">
-                                        <img src="img/f12.1.png" alt="" class="function-item-img-hover">
-                                    </i>
-                                    <span>Gift</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- bottom下面 -->
-        <div class="seckill-container" id="item1">
-            <div class="seckill w clearfix">
-                <div class="seckill-countdown">
-                   <div class="countdown-title">Last Minute</div>
-                   <div>
-                       <div class="countdown-desc">
-                            <strong>00:00</strong>
-                                Count down
-                       </div>
-                       <span class="timer">
-                           <span class="timer-unit timer-hour" id="timer-hour"></span>
-                           <span class="timer-unit timer-minute" id="timer-minute"></span>
-                           <span class="timer-unit timer-second" id="timer-second"></span>
-                       </span>
-                   </div> 
-                </div>
-                <div class="seckill-list">
-                    <a href="" class="seckill-item">
-                        <img src="img/seckill1.jpg.webp" alt="">
-                        <h5 class="seckill-item-name">International Version Oclean One Rechargeable Automatic Sonic Electrical Toothbrush APP Control Intelligent Dental Health Care</h5>
-                        <div class="seckill-item-price">
-                            <span class="seckill-item-price-sec">                                
-                                <i>￡</i>
-                                <span>25.22</span>
-                            </span>
-                            <span class="seckill-item-price-origin">
-                                <i>￡</i>
-                                <span>42.04</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="" class="seckill-item">
-                        <img src="img/seckill2.jpg.webp" alt="">
-                        <h5 class="seckill-item-name">Philips (PHILIPS) shaving starter pulse light epilator laser shaver BRI861 / 80</h5>
-                        <div class="seckill-item-price">
-                            <span class="seckill-item-price-sec">                                
-                                <i>￡</i>
-                                <span>90.28</span>
-                            </span>
-                            <span class="seckill-item-price-origin">
-                                <i>￡</i>
-                                <span>150.47</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="" class="seckill-item">
-                        <img src="img/seckill3.jpg.webp" alt="">
-                        <h5 class="seckill-item-name">Braun Oral B 4000 3D Sonic Intelligent Electric Toothbrush Blue (4 modes, 2 replacement brush heads, 1 travel box)</h5>
-                        <div class="seckill-item-price">
-                            <span class="seckill-item-price-sec">                                
-                                <i>￡</i>
-                                <span>37.76</span>
-                            </span>
-                            <span class="seckill-item-price-origin">
-                                <i>￡</i>
-                                <span>62.94</span>
-                            </span>
-                        </div>
-                    </a>
-                    <a href="" class="seckill-item">
-                        <img src="img/seckill4.jpg.webp" alt="">
-                        <h5 class="seckill-item-name">Soocas BH01W Replacement Electric Toothbrush Heads, 2 Pcs</h5>
-                        <div class="seckill-item-price">
-                            <span class="seckill-item-price-sec">                                
-                                <i>￡</i>
-                                <span>5.38</span>
-                            </span>
-                            <span class="seckill-item-price-origin">
-                                <i>￡</i>
-                                <span>8.97</span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="seckill-slider">
-                    <div id="seckill-slider-list">
-                        <div class="seckill-slider-item seckill-slider-item1">
-                            <div class="seckill-slider-item-image">
-                                <img src="img/seckill-slide1.jpg.webp" alt="">
-                            </div>
-                            <div class="seckill-slider-item-info">
-                                <p class="item-info-title">Save ￡500</p>
-                                <p class="item-info-promo">Free,Fast delivery</p>
-                                <div class="item-info-action">
-                                    View
-                                    <i>></i>
+                                <div class="cate-part2">
+                                    <div>
+                                        <div class="cate-brand clearfix">
+                                            <a href=""><img src="img/cate1.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate2.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate3.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate4.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate5.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate6.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate7.jpg.webp" alt=""></a>
+                                            <a href=""><img src="img/cate8.jpg.webp" alt=""></a>
+                                        </div>
+                                        <div class="cate-promotion">
+                                            <a href=""><img src="img/catepromo1.png.webp" alt=""></a>
+                                            <a href=""><img src="img/catepromo2.png.webp" alt=""></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="seckill-slider-item seckill-slider-item2">
-                            <div class="seckill-slider-item-image">
-                                <img src="img/seckill-slide2.jpg.webp" alt="">
-                            </div>
-                            <div class="seckill-slider-item-info">
-                                <p class="item-info-title">Save £100.99</p>
-                                <p class="item-info-promo">FREE collection</p>
-                                <div class="item-info-action">
-                                    View
-                                    <i>></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="activity-wrap" id="item2">
-            <div class="activity">
-                <!-- StockKeepingUnit -->
-                <div class="activity-main">
-                    <div class="activity-sku">
-                        <div class="sku-item">
-                            <img src="img/sku1.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Appliances</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku2.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">TV</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku3.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Audio</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku4.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Computing</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku5.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Gaming</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku6.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Cameras</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku7.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Phones</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku8.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Smart Tech</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku9.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Home</span>
-                        </div>
-                        <div class="sku-item">
-                            <img src="img/sku10.jpg!cc_130x130.webp" alt="" class="sku-img">
-                            <div class="sku-desc">
-                                <img src="img/sku-ban.png!cc_172x30.webp" alt="">
-                                <span class="sku-desc-text">View Product</span>
-                            </div>
-                            <span class="sku-title">Outdoor</span>
-                        </div>
-                    </div>
-                    <div class="activity-shops">
-                        <div class="shop-item"><img src="img/shop1.png!cc_190x100.webp" alt=""></div>
-                        <div class="shop-item"><img src="img/shop2.png!cc_190x100.webp" alt=""></div>
-                        <div class="shop-item"><img src="img/shop3.png!cc_190x100.webp" alt=""></div>
-                        <div class="shop-item"><img src="img/shop4.png!cc_190x100.webp" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="mod-service">
-                <ul class="mod-service-list clearfix">
-                    <li class="mod-service-item">
-                        <img src="img/mod-service1.png" alt="" class="mod-service-item-title">
-                        <span class="mod-service-item-text">Secure Payments</span>
-                        <p>Pay with secure payment methods</p>
                     </li>
-                    <li class="mod-service-item">
-                        <img src="img/mod-service2.png" alt="" class="mod-service-item-title">
-                        <span class="mod-service-item-text">30-day Return Policy</span>
-                        <p>If your item is damaged or not as described, you may return it within 30 days after delivery.</p>
+                    <li>
+                        <a href="">Phones</a>
+                        <span>&</span>
+                        <a href="">Accessories</a>
                     </li>
-                    <li class="mod-service-item">
-                        <img src="img/mod-service3.png" alt="" class="mod-service-item-title">
-                        <span class="mod-service-item-text">24/7 Customer Service</span>
-                        <p>We'll respond to you within 24 hours</p>
+                    <li>
+                        <a href="">Consumer Electronics</a>
                     </li>
-                    <li class="mod-service-item">
-                        <img src="img/mod-service4.png" alt="" class="mod-service-item-title">
-                        <span class="mod-service-item-text">Worldwide Delivery</span>
-                        <p>Covers more than 200 countries and regions worldwide</p>
+                    <li>
+                        <a href="">Computer</a>
+                        <span>&</span>
+                        <a href="">Office</a>
                     </li>
-                    <li class="mod-service-item">
-                        <img src="img/mod-service5.png" alt="" class="mod-service-item-title">
-                        <span class="mod-service-item-text">International Brands</span>
-                        <p>Guaranteed authenticity</p>
+                    <li>
+                        <a href="">Wigs</a>
+                        <span>&</span>
+                        <a href="">Hair Extensions</a>
+                    </li>
+                    <li>
+                        <a href="">Women's Clothing</a>
+                    </li>
+                    <li>
+                        <a href="">Men's Clothing</a>
+                    </li>
+                    <li>
+                        <a href="">Sports</a>
+                        <span>&</span>
+                        <a href="">Outdoors</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                        <span>&</span>
+                        <a href="">Garden</a>
+                    </li>
+                    <li>
+                        <a href="">Health</a>
+                        <span>&</span>
+                        <a href="">Beauty</a>
+                    </li>
+                    <li>
+                        <a href="">Toys,Kids</a>
+                        <span>&</span>
+                        <a href="">Babies</a>
+                    </li>
+                    <li>
+                        <a href="">Shoes</a>
+                        <span>&</span>
+                        <a href="">Bags</a>
+                    </li>
+                    <li>
+                        <a href="">Jewelry</a>
+                        <span>&</span>
+                        <a href="">Watches</a>
+                    </li>
+                    <li>
+                        <a href="">Automotive</a>
+                        <span>&</span>
+                        <a href="">Motors</a>
+                    </li>
+                    <li>
+                        <a href="">All Categories</a>
                     </li>
                 </ul>
             </div>
-            <div class="mod-help">
-                <div class="mod-help-inner clearfix">
-                    <div class="mod-help-list">
-                        <div class="mod-help-item">
+            <div class="slider-wrap">
+                <div class="slider" id="slider">
+                    <ul id="imgList">
+                        <li><a><img src="img/l1.jpg" alt=""></a></li>
+                        <li><a><img src="img/l2.jpg" alt=""></a></li>
+                        <li><a><img src="img/l3.jpg" alt=""></a></li>
+                        <li><a><img src="img/l4.jpg" alt=""></a></li>
+                        <li><a><img src="img/l5.jpg" alt=""></a></li>
+                        <li><a><img src="img/l6.jpg" alt=""></a></li>
+                        <li><a><img src="img/l7.jpg" alt=""></a></li>
+                        <li><a><img src="img/l8.jpg" alt=""></a></li>
+                    </ul>
+                    <button class="btn-prev"><i class="fas fa-angle-left"></i></button>
+                    <button class="btn-next"><i class="fas fa-angle-right"></i></button>
+                    <div id="pointer">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+            <ul id="ad-boxwrap">
+                <li class="ad-box">
+                    <a href="javascript:;"><img src="img/a1.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a2.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a3.jpg" alt=""></a>
+                </li>
+
+                <li class="ad-box">
+                    <a href="javascript:;"><img src="img/a4.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a5.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a6.jpg" alt=""></a>
+                </li>
+
+                <li class="ad-box">
+                    <a href="javascript:;"><img src="img/a7.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a8.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/a9.jpg" alt=""></a>
+                </li>
+                <button class="btn-ad-prev"><i class="fas fa-angle-left"></i></button>
+                <button class="btn-ad-next"><i class="fas fa-angle-right"></i></button>
+            </ul>
+            <div class="function-wrap">
+                <div class="user">
+                    <a href=""><img src="img/small-logo.png" alt=""> </a>
+                    <div class="user-show">
+                        <a href="">Hi~Welcome！</a>
+                        <p>
+                            <a href="">Sign in</a>
+                            &nbsp;|&nbsp;
+                            <a href="">Sign up</a>
+                        </p>
+                    </div>
+                    <div class="user-profit">
+                        <a href="" class="user-profit-new">New</a>
+                        <a href="" class="user-profit-plus">Members</a>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-head">
+                        <h3>Deals</h3>
+                        <a href="">more></a>
+                    </div>
+                    <ul class="news-content">
+                        <li><a href="">Inspired by your shopping trends</a></li>
+                        <li><a href="">Inspired by your purchases</a></li>
+                        <li><a href="">Recommended items similar to your previous purchases</a></li>
+                        <li><a href="">Recommendations for you in Health & Personal Care</a></li>
+                    </ul>
+                </div>
+                <div class="function">
+                    <ul class="function-list">
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f1.png" alt="" class="function-item-img">
+                                    <img src="img/f1.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Top-up</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f2.png" alt="" class="function-item-img">
+                                    <img src="img/f2.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Flights</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f3.png" alt="" class="function-item-img">
+                                    <img src="img/f3.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f4.png" alt="" class="function-item-img">
+                                    <img src="img/f4.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Game</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f5.png" alt="" class="function-item-img">
+                                    <img src="img/f5.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Gas</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f6.png" alt="" class="function-item-img">
+                                    <img src="img/f6.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Train</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f7.png" alt="" class="function-item-img">
+                                    <img src="img/f7.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Charity</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f8.png" alt="" class="function-item-img">
+                                    <img src="img/f8.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Wealth</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f9.png" alt="" class="function-item-img">
+                                    <img src="img/f9.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Loan</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f10.png" alt="" class="function-item-img">
+                                    <img src="img/f10.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Film</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f11.png" alt="" class="function-item-img">
+                                    <img src="img/f11.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Business</span>
+                            </a>
+                        </li>
+                        <li class="function-item">
+                            <a href="">
+                                <i>
+                                    <img src="img/f12.png" alt="" class="function-item-img">
+                                    <img src="img/f12.1.png" alt="" class="function-item-img-hover">
+                                </i>
+                                <span>Gift</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom下面 -->
+    <div class="seckill-container" id="item1">
+        <div class="seckill w clearfix">
+            <div class="seckill-countdown">
+                <div class="countdown-title">Last Minute</div>
+                <div>
+                    <div class="countdown-desc">
+                        <strong>00:00</strong>
+                        Count down
+                    </div>
+                    <span class="timer">
+                        <span class="timer-unit timer-hour" id="timer-hour"></span>
+                        <span class="timer-unit timer-minute" id="timer-minute"></span>
+                        <span class="timer-unit timer-second" id="timer-second"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="seckill-list">
+                <a href="" class="seckill-item">
+                    <img src="img/seckill1.jpg.webp" alt="">
+                    <h5 class="seckill-item-name">International Version Oclean One Rechargeable Automatic Sonic
+                        Electrical Toothbrush APP Control Intelligent Dental Health Care</h5>
+                    <div class="seckill-item-price">
+                        <span class="seckill-item-price-sec">
+                            <i>￡</i>
+                            <span>25.22</span>
+                        </span>
+                        <span class="seckill-item-price-origin">
+                            <i>￡</i>
+                            <span>42.04</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="" class="seckill-item">
+                    <img src="img/seckill2.jpg.webp" alt="">
+                    <h5 class="seckill-item-name">Philips (PHILIPS) shaving starter pulse light epilator laser shaver
+                        BRI861 / 80</h5>
+                    <div class="seckill-item-price">
+                        <span class="seckill-item-price-sec">
+                            <i>￡</i>
+                            <span>90.28</span>
+                        </span>
+                        <span class="seckill-item-price-origin">
+                            <i>￡</i>
+                            <span>150.47</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="" class="seckill-item">
+                    <img src="img/seckill3.jpg.webp" alt="">
+                    <h5 class="seckill-item-name">Braun Oral B 4000 3D Sonic Intelligent Electric Toothbrush Blue (4
+                        modes, 2 replacement brush heads, 1 travel box)</h5>
+                    <div class="seckill-item-price">
+                        <span class="seckill-item-price-sec">
+                            <i>￡</i>
+                            <span>37.76</span>
+                        </span>
+                        <span class="seckill-item-price-origin">
+                            <i>￡</i>
+                            <span>62.94</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="" class="seckill-item">
+                    <img src="img/seckill4.jpg.webp" alt="">
+                    <h5 class="seckill-item-name">Soocas BH01W Replacement Electric Toothbrush Heads, 2 Pcs</h5>
+                    <div class="seckill-item-price">
+                        <span class="seckill-item-price-sec">
+                            <i>￡</i>
+                            <span>5.38</span>
+                        </span>
+                        <span class="seckill-item-price-origin">
+                            <i>￡</i>
+                            <span>8.97</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="seckill-slider">
+                <div id="seckill-slider-list">
+                    <div class="seckill-slider-item seckill-slider-item1">
+                        <div class="seckill-slider-item-image">
+                            <img src="img/seckill-slide1.jpg.webp" alt="">
+                        </div>
+                        <div class="seckill-slider-item-info">
+                            <p class="item-info-title">Save ￡500</p>
+                            <p class="item-info-promo">Free,Fast delivery</p>
+                            <div class="item-info-action">
+                                View
+                                <i>></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seckill-slider-item seckill-slider-item2">
+                        <div class="seckill-slider-item-image">
+                            <img src="img/seckill-slide2.jpg.webp" alt="">
+                        </div>
+                        <div class="seckill-slider-item-info">
+                            <p class="item-info-title">Save £100.99</p>
+                            <p class="item-info-promo">FREE collection</p>
+                            <div class="item-info-action">
+                                View
+                                <i>></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="activity-wrap" id="item2">
+        <div class="activity">
+            <!-- StockKeepingUnit -->
+            <div class="activity-main">
+                <div class="activity-sku">
+                    <div class="sku-item">
+                        <img src="img/sku1.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Appliances</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku2.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">TV</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku3.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Audio</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku4.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Computing</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku5.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Gaming</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku6.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Cameras</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku7.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Phones</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku8.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Smart Tech</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku9.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Home</span>
+                    </div>
+                    <div class="sku-item">
+                        <img src="img/sku10.jpg!cc_130x130.webp" alt="" class="sku-img">
+                        <div class="sku-desc">
+                            <img src="img/sku-ban.png!cc_172x30.webp" alt="">
+                            <span class="sku-desc-text">View Product</span>
+                        </div>
+                        <span class="sku-title">Outdoor</span>
+                    </div>
+                </div>
+                <div class="activity-shops">
+                    <div class="shop-item"><img src="img/shop1.png!cc_190x100.webp" alt=""></div>
+                    <div class="shop-item"><img src="img/shop2.png!cc_190x100.webp" alt=""></div>
+                    <div class="shop-item"><img src="img/shop3.png!cc_190x100.webp" alt=""></div>
+                    <div class="shop-item"><img src="img/shop4.png!cc_190x100.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="mod-service">
+            <ul class="mod-service-list clearfix">
+                <li class="mod-service-item">
+                    <img src="img/mod-service1.png" alt="" class="mod-service-item-title">
+                    <span class="mod-service-item-text">Secure Payments</span>
+                    <p>Pay with secure payment methods</p>
+                </li>
+                <li class="mod-service-item">
+                    <img src="img/mod-service2.png" alt="" class="mod-service-item-title">
+                    <span class="mod-service-item-text">30-day Return Policy</span>
+                    <p>If your item is damaged or not as described, you may return it within 30 days after delivery.</p>
+                </li>
+                <li class="mod-service-item">
+                    <img src="img/mod-service3.png" alt="" class="mod-service-item-title">
+                    <span class="mod-service-item-text">24/7 Customer Service</span>
+                    <p>We'll respond to you within 24 hours</p>
+                </li>
+                <li class="mod-service-item">
+                    <img src="img/mod-service4.png" alt="" class="mod-service-item-title">
+                    <span class="mod-service-item-text">Worldwide Delivery</span>
+                    <p>Covers more than 200 countries and regions worldwide</p>
+                </li>
+                <li class="mod-service-item">
+                    <img src="img/mod-service5.png" alt="" class="mod-service-item-title">
+                    <span class="mod-service-item-text">International Brands</span>
+                    <p>Guaranteed authenticity</p>
+                </li>
+            </ul>
+        </div>
+        <div class="mod-help">
+            <div class="mod-help-inner clearfix">
+                <div class="mod-help-list">
+                    <div class="mod-help-item">
                         <div class="mod-help-title">Customer Service</div>
                         <ul class="mod-help-content">
                             <li><a href="">My Orders</a></li>
@@ -844,10 +854,10 @@
                             <li><a href="">Shipping</a></li>
                             <li><a href="">Help Center</a></li>
                         </ul>
-                        </div>
                     </div>
-                    <div class="mod-help-list">
-                        <div class="mod-help-item">
+                </div>
+                <div class="mod-help-list">
+                    <div class="mod-help-item">
                         <div class="mod-help-title">Get to Know Us</div>
                         <ul class="mod-help-content">
                             <li><a href="">About JoyBuy</a></li>
@@ -856,31 +866,31 @@
                             <li><a href="">Privacy Policy</a></li>
                             <li><a href="">Contact Us</a></li>
                         </ul>
-                        </div>
                     </div>
-                    <div class="mod-help-list">
-                        <div class="mod-help-item">
+                </div>
+                <div class="mod-help-list">
+                    <div class="mod-help-item">
                         <div class="mod-help-title">Partner Promotion</div>
                         <ul class="mod-help-content">
                             <li><a href="">Become an Influencer</a></li>
                             <li><a href="">Join Affiliate Program</a></li>
                             <li><a href="">Partnership Coopration</a></li>
                             <li><a href="">Joybuy Earnings Guide</a></li>
-                        </ul> 
-                        </div>
+                        </ul>
                     </div>
-                    <div class="mod-help-list">
-                        <div class="mod-help-item">
+                </div>
+                <div class="mod-help-list">
+                    <div class="mod-help-item">
                         <div class="mod-help-title">Make Money with Us</div>
                         <ul class="mod-help-content">
                             <li><a href="">Sell on joybuy.com</a></li>
                             <li><a href="">Restricted Products</a></li>
                             <li><a href="">Selling Policies</a></li>
                         </ul>
-                        </div>
                     </div>
-                    <div class="mod-help-list">
-                        <div class="mod-help-item">
+                </div>
+                <div class="mod-help-list">
+                    <div class="mod-help-item">
                         <div class="mod-help-title">JD Group</div>
                         <ul class="mod-help-content">
                             <li><a href=""></a></li>
@@ -888,134 +898,42 @@
                             <li><a href="">中国站</a></li>
                             <li><a href="">Sitio de España</a></li>
                             <li><a href="">Situs Indonesia</a></li>
-                        </ul> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mod-copyright">
-                <div class="mod-copyright-inner">
-                    <div class="mod-copyright-link">
-                        <a href="">关于我们</a>
-                        <span class="split">|</span>
-                        <a href="">联系我们</a>
-                        <span class="split">|</span>
-                        <a href="">联系客服</a>
-                        <span class="split">|</span>
-                        <a href="">合作招商</a>
-                        <span class="split">|</span>
-                        <a href="">商家帮助</a>
-                        <span class="split">|</span>
-                        <a href="">营销中心</a>
-                        <span class="split">|</span>
-                        <a href="">手机京东</a>
-                        <span class="split">|</span>
-                        <a href="">友情链接</a>
-                        <span class="split">|</span>
-                        <a href="">销售联盟</a>
-                        <span class="split">|</span>
-                        <a href="">京东社区</a>
-                        <span class="split">|</span>
-                        <a href="">风险监测</a>
-                        <span class="split">|</span>
-                        <a href="">隐私政策</a>
-                        <span class="split">|</span>
-                        <a href="">京东公益</a>
-                        <span class="split">|</span>
-                        <a href="">English Site</a>
-                        <span class="split">|</span>
-                        <a href="">Media&IR</a>
-                    </div>
-                    <div class="mod-copyright-content">
-                        <div class="mod-copyright-cert">
-                            <p>
-                                <a href="">京公网安备 11000002000088号</a>
-                                <span class="split">|</span>
-                                <span>京ICP证070359号</span>
-                                <span class="split">|</span>
-                                <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
-                                <span class="split">|</span>
-                                <span>新出发京零 字第大120007号</span>
-                            </p>
-                            <p>
-                                <span>互联网出版许可证编号新出网证(京)字150号</span>
-                                <span class="split">|</span>
-                                <a href="">出版物经营许可证</a>
-                                <span class="split">|</span>
-                                <a href="">网络文化经营许可证京网文[2014]2148-348号</a>
-                                <span class="split">|</span>
-                                <span>违法和不良信息举报电话：4006561155</span>
-                            </p>
-                            <p>
-                                <span>Copyright © 2004 - </span>
-                                <span class="split">|</span>
-                                <span>消费者维权热线：4006067733</span>
-                                <a href="">经营证照</a>
-                                <span class="split">|</span>
-                                <span>(京)网械平台备字(2018)第00003号</span>
-                                <span class="split">|</span>
-                                <a href="">营业执照</a>
-                            </p>
-                        </div>
-                        <div class="mod-copyright-inter">
-                            <a href="">
-                                <img src="img/map1.png" alt="">
-                                Global Site
-                                <span class="split">|</span>
-                            </a>
-                            <a href="">
-                                <img src="img/map2.png" alt="">
-                                Сайт России
-                                <span class="split">|</span>
-                            </a>
-                            <a href="">
-                                <img src="img/map3.png" alt="">
-                                Situs Indonesia
-                                <span class="split">|</span>
-                            </a>
-                            <a href="">
-                                <img src="img/map4.png" alt="">
-                                Sitio de España
-                                <span class="split">|</span>
-                            </a>
-                            <a href="">
-                                <img src="img/map5.png" alt="">
-                                เว็บไซต์ประเทศไทย
-                            </a>
-                        </div>
-                        <div class="mod-copyright-subsites">
-                            <p>
-                                <span>京东旗下网站：</span>
-                                <a href="">京东钱包</a>
-                                <span class="split">|</span>
-                                <a href="">京东智联云</a>
-                            </p>
-                       </div>
-                    </div>
-                    <div class="mod-copyright-authentic">
-                        <a href="">
-                            <img src="img/copyright1.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="img/copyright2.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="img/copyright3.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="img/copyright4.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="img/copyright5.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="img/copyright6.png" alt="">
-                        </a>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="elevator" >
+        <div class="mod-info">
+            <div class="mod-info-inner clearfix">
+                <div class="mod-info-left">
+                    <div class="getApp">
+                        <span>Get the App:</span>
+                        <a href=""><img src="img/apple.png" alt=""></a>
+                        <a href=""><img src="img/google.png" alt=""></a>
+                    </div>
+                    <div class="Partners">
+                        <span>Partners:</span>
+                        <img src="img/Walmart.png" alt="">
+                    </div>
+                    <div class="verified">
+                        <span>Verified by:</span>
+                        <img src="img/Pci.png" alt="">
+                    </div>
+                </div>
+                <div class="mod-info-right">
+                    <div class="pay-with">
+                        <span>Pay with:</span>
+                        <img src="img/pay.jpg" alt="">
+                    </div>
+                    <div class="sign-up">
+                        <span>Sign up:</span>
+                        <span class="subscribe">Subscribe</span>
+                        <input type="text" class="email">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="elevator">
             <ul class="elevator-list">
                 <li class="elevator-item" id="elevator-item1"><a href="#item1">京东秒杀</a></li>
                 <li class="elevator-item" id="elevator-item2"><a href="#item2">特色优选</a></li>
@@ -1025,4 +943,5 @@
         </div>
     </div>
 </body>
+
 </html>
